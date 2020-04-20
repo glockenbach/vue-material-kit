@@ -17,6 +17,8 @@ import App from "./App.vue";
 import router from "./router";
 
 import MaterialKit from "./plugins/material-kit";
+import { mapActions } from "vuex";
+import store from "./store";
 
 Vue.config.productionTip = false;
 
@@ -35,6 +37,11 @@ Vue.mixin({
 });
 
 new Vue({
+  store,
   router,
-  render: h => h(App)
+  render: h => h(App),
+  methods: {
+    ...mapActions([])
+  },
+  created() {}
 }).$mount("#app");
