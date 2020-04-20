@@ -1,15 +1,15 @@
-.md-datepicker-body-header{
-  .md-icon-button{
+.md-datepicker-body-header {
+  .md-icon-button {
     background-color: transparent !important;
     box-shadow: none !important;
     font-weight: 500;
 
     &:hover,
-    &:focus{
+    &:focus {
       background-color: #eee !important;
     }
 
-    .md-button-content svg{
+    .md-button-content svg {
       fill: #212529 !important;
     }
   }
@@ -28,22 +28,22 @@
   .open > &.dropdown-toggle,
   .open > &.dropdown-toggle:focus,
   .open > &.dropdown-toggle:hover {
-      background-color: $brand-success !important;
+    background-color: $brand-success !important;
   }
 
   &:focus,
   &:active,
-  &:hover{
+  &:hover {
     // remove this line if you want black shadows
     @include button-shadow-color($brand-success);
   }
 }
 
-.md-datepicker-header .md-datepicker-date-select{
+.md-datepicker-header .md-datepicker-date-select {
   font-size: 30px;
 }
 
-.md-button[class*="md-datepicker-"]{
+.md-button[class*="md-datepicker-"] {
   background-color: transparent !important;
   box-shadow: none !important;
   font-weight: 500;
@@ -52,49 +52,49 @@
   margin-right: 48px;
 
   &:hover,
-  &:focus{
+  &:focus {
     background-color: #eee !important;
   }
 
-  .md-button-content{
+  .md-button-content {
     color: #212529 !important;
   }
 }
 
-.md-datepicker-day-button{
+.md-datepicker-day-button {
   font-size: 0.875rem;
 
   &:hover,
-  &:focus{
+  &:focus {
     background-color: #eee !important;
   }
 }
 
 .md-datepicker-today,
-.md-datepicker-selected{
+.md-datepicker-selected {
   @include shadow-2dp-color($brand-success);
   font-weight: lighter !important;
 
   &,
   &:hover,
-  &:focus{
+  &:focus {
     background-color: $brand-success !important;
     color: $white-color !important;
   }
 }
 
 .md-datepicker-month-button,
-.md-datepicker-year-button{
+.md-datepicker-year-button {
   font-weight: 300;
 }
 
 .md-datepicker-dayname,
 .md-datepicker-monthname,
-.md-datepicker-day{
+.md-datepicker-day {
   font-weight: 300 !important;
 }
 
-.md-datepicker-dialog .md-datepicker-header{
+.md-datepicker-dialog .md-datepicker-header {
   background: linear-gradient(60deg, $green-400, $green-600) !important;
 }
 

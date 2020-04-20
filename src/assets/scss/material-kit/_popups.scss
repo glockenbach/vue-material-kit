@@ -1,5 +1,5 @@
 .md-tooltip,
-.popover{
+.popover {
   padding: 10px 15px;
   min-width: 140px;
   max-width: 200px;
@@ -12,7 +12,7 @@
   font-weight: 400;
   @include shadow-8dp();
 
-  &:after{
+  &:after {
     position: absolute;
     bottom: -5px;
     height: 0;
@@ -22,7 +22,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    vertical-align: .255em;
+    vertical-align: 0.255em;
     content: "";
   }
 
@@ -42,7 +42,7 @@
     opacity: 1;
   }
 
-  &[x-placement="top"]:after{
+  &[x-placement="top"]:after {
     border-top: 6px solid $white-color;
     border-right: 6px solid transparent;
     border-bottom: 0;
@@ -64,14 +64,14 @@
     border-left: 6px solid transparent;
   }
 
-  &[x-placement="bottom"]:after{
+  &[x-placement="bottom"]:after {
     border-top: 0;
     top: -6px;
     border-right: 6px solid transparent;
     border-bottom: 6px solid $white-color;
     border-left: 6px solid transparent;
   }
-  &.popover[x-placement="bottom"]:after{
+  &.popover[x-placement="bottom"]:after {
     border-top: 0;
     top: -6px;
     transform: none;
@@ -83,7 +83,7 @@
     border-bottom: 6px solid $white-color;
     border-left: 6px solid transparent;
   }
-  &[x-placement="left"]:after{
+  &[x-placement="left"]:after {
     right: -6px;
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
@@ -103,7 +103,7 @@
     border-left: 6px solid $white-color;
   }
 
-  &[x-placement="right"]:after{
+  &[x-placement="right"]:after {
     top: 50%;
     left: auto;
     margin-left: unset;
@@ -128,7 +128,7 @@
 
 .popover {
   will-change: opacity, visibility;
-  transition: opacity .15s linear, visibility .15s linear;
+  transition: opacity 0.15s linear, visibility 0.15s linear;
 
   &:after {
     top: 50%;
@@ -137,7 +137,6 @@
     margin-right: unset;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-
   }
 }
 

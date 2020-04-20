@@ -14,10 +14,11 @@
   padding: 0 !important;
   margin: 10px;
   border: 1px solid #fff;
-  background: #FFF !important;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+  background: #fff !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   border-radius: 2px !important;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 
   &:focus {
     outline: 0 !important;
@@ -27,7 +28,8 @@
 .VueCarousel-dot--active {
   margin-top: 10px;
   transform: scale(1.5);
-  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 
 .carousel-caption {
@@ -50,7 +52,6 @@
 
 .VueCarousel-navigation-prev {
   left: 95px !important;
-
 }
 
 .VueCarousel-navigation-next {
@@ -61,7 +62,7 @@
 .VueCarousel-navigation-next i {
   font-size: 50px;
   color: $white-color !important;
-  opacity: .5;
+  opacity: 0.5;
 
   &:hover {
     opacity: 1;
