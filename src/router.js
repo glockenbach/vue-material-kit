@@ -4,6 +4,7 @@ import Index from "./views/Index.vue";
 import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
 import Profile from "./views/Profile.vue";
+import Components from "./views/Components.vue";
 import MainNavbar from "./layout/MainNavbar.vue";
 import MainFooter from "./layout/MainFooter.vue";
 
@@ -12,11 +13,25 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
+      path: "/components",
+      name: "components",
+      components: {
+        default: Components,
+        header: MainNavbar,
+        footer: MainFooter
+      },
+      props: {
+        header: { colorOnScroll: 5 },
+        footer: { backgroundColor: "black" }
+      }
+    },
+
+    {
       path: "/",
       name: "index",
       components: { default: Index, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 400 },
+        header: { colorOnScroll: 5 },
         footer: { backgroundColor: "black" }
       }
     },
@@ -25,8 +40,8 @@ export default new Router({
       name: "landing",
       components: { default: Landing, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 400 },
-        footer: { backgroundColor: "black" }
+        header: { colorOnScroll: 5 },
+        footer: { backgroundColor: "#0000007d" }
       }
     },
     {
@@ -34,7 +49,8 @@ export default new Router({
       name: "login",
       components: { default: Login, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 400 }
+        header: { colorOnScroll: 400 },
+        footer: { backgroundColor: "#0000007d" }
       }
     },
     {
