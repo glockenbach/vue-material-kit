@@ -3,6 +3,7 @@
     class="footer"
     :class="{ [`footer-${type}`]: type }"
     :data-background-color="backgroundColor"
+    :style="{ [`background-color`]: backgroundColor }"
   >
     <div class="container">
       <nav>

@@ -2,7 +2,7 @@
   <div id="material-kit">
     <div :class="{ 'nav-open': NavbarStore.showNavbar }">
       <router-view name="header" />
-      <div>
+      <div id="page-container">
         <router-view />
       </div>
       <router-view name="footer" />
