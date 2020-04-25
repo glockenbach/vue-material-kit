@@ -11,6 +11,7 @@ import MainFooter from "./layout/MainFooter.vue";
 Vue.use(Router);
 
 export default new Router({
+  mode: "history",
   routes: [
     {
       path: "/components",
@@ -31,8 +32,8 @@ export default new Router({
       name: "index",
       components: { default: Index, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 5 },
-        footer: { backgroundColor: "black" }
+        header: { colorOnScroll: 5 }
+        // footer: { backgroundColor: "black" }
       }
     },
     {
