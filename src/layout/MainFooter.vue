@@ -8,32 +8,16 @@
     <div class="container">
       <nav>
         <ul>
-          <li>
+          <li v-show="false">
             <a href="https://www.creative-tim.com">
               Creative Tim
-            </a>
-          </li>
-          <li>
-            <a href="https:///presentation.creative-tim.com">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="https:///blog.creative-tim.com">
-              Blog
-            </a>
-          </li>
-          <li>
-            <a href="https://www.creative-tim.com/license">
-              Licenses
             </a>
           </li>
         </ul>
       </nav>
       <div class="copyright">
-        &copy; {{ year }}, made with <md-icon>favorite</md-icon> by
-        <a href="https://www.creative-tim.com/" target="_blank">Creative Tim</a>
-        for a better web.
+        &copy; {{ year }}, created and hosted by
+        <a href="https://www.glockenbach.se/" target="_blank">Glockenbach AB</a>
       </div>
     </div>
   </footer>
