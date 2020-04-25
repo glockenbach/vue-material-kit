@@ -4,7 +4,7 @@
       <div class="md-card-media">
         <iframe
           class="md-image"
-          src="data:"
+          src="data:text/html, "
           allowfullscreen
           width="0"
           height="0"
@@ -46,7 +46,7 @@ export default {
     },
     videoSrc: {
       type: String,
-      default: "data:,"
+      default: ""
     },
     videoRatio: {
       type: Number,
